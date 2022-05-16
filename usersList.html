@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="userForm.html">Create user</a>
+        <a href="">Get users</a>
+    </nav>
+    <ul></ul>
+    1
+</body>
+<script>
+    const ul = document.querySelector("ul");
+    const usersList = [Joao, Maria, Pedro]; 
+
+    fetch("http://localhost:8080/users", (response)=> { 
+        response.then((list)=>{ 
+            //Provavelmente terei q dar um parse pra virar json
+            for (let user of usersList) { 
+                const li = document.createElement("li"); 
+                ul.appendChild(li); 
+            }
+        })
+    })
+
+</script>
+</html>

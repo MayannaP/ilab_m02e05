@@ -1,0 +1,6 @@
+CREATE TABLE USUARIO (
+	id serial, 
+	nome varchar(200), 
+	cpf varchar(11),
+	email varchar(200)
+); 
